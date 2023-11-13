@@ -1,0 +1,93 @@
+@media(max-width:300px)
+{
+    .carousel-item video{
+        height:500px;
+       }
+       .carousel-caption .display-1{
+        position: relative;
+        top:180px;
+       }
+   }
+   .d-flex{
+    flex-wrap: wrap;
+}
+.container-fluid1 .h4 a{
+    text-decoration: none;
+    color: white;
+    }
+    .btn a{
+        text-decoration: none;
+        color: black;
+    }
+    @media(min-width:200px)and (max-width:500px){
+      .row .col-8 .h4 a{
+        font-size: 15px;
+      }
+      .btn a{
+        text-decoration: none;
+        transition: none;
+    }
+    
+    a::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1.5px;
+      border-radius: 4px;
+      background-color: black;
+      bottom:0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+    }
+
+
+    a {
+      color: #18272F;
+      position: relative;
+      
+      text-decoration: none;
+    }
+    
+    
+    a::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1.5px;
+      border-radius: 4px;
+      background-color: aliceblue;
+      bottom:0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+    
+    a:hover::before {
+      transform-origin: center;
+      transform: scaleX(1);
+    }
+    .display-1 {
+      transform: scale(.5);
+      animation: .2s slideIn ease-in-out forwards , 0.5s skewBg ease-in-out;
+    }
+    
+    
+    
+    @keyframes skewBg {
+      0% {
+        transform: scale(.5);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    @keyframes slideIn {
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }

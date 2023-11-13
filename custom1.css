@@ -1,0 +1,167 @@
+@media(max-width:300px)
+{
+   .carousel-caption h1 img{
+     height: 60px;
+     margin-top: 200px;
+   
+      }
+      .carousel-caption h1 video{
+        height: 60px;
+        margin-top: 200px;
+      
+         }
+      .carousel-caption .display-1{
+        font-size: 32px;
+      }
+      .carousel-item img{
+        height:450px;
+       }
+       .carousel-item video{
+        height:450px;
+       }
+       .object-fit-contain{
+        margin-top: -120px;
+        margin-bottom: -120px;;
+       }
+   
+   }
+   @media(min-width:301px)and (max-width:991px)
+{
+.carousel-caption h1 img{
+  height: 110px;
+  margin-top: 200px;
+
+   }
+ 
+   .carousel-caption h1 video{
+    height: 110px;
+    margin-top: 200px;
+  
+     }
+ .carousel-item img{
+    height:500px;
+  
+   }
+   .carousel-item video{
+    height:489px;
+  
+   }
+}
+.d-flex{
+    flex-wrap: wrap;
+}
+@media(min-width:301px)and (max-width:700px){
+    .object-fit-contain{
+        margin-top: -50px;
+        margin-bottom: -80px;
+    }
+   
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+@media(min-width:200px)and (max-width:500px){
+  .row .col-8 .h6 a{
+    font-size: 15px;
+  }
+  .btn a{
+    text-decoration: none;
+    transition: none;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  border-radius: 4px;
+  background-color: black;
+  bottom:0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+ 
+}
+
+.card:hover{
+  transform:scale(1.07);
+  box-shadow: 2px 3px 30px grey;
+}
+.card{
+  transition:all 0.3s;
+  padding-bottom: 5px;
+}
+.col-6 img{
+  box-shadow: 2px -4px 5px grey;
+  filter: brightness(100%);
+  transition: all 0.3s;
+}
+.col-6 img:hover{
+  filter: brightness(80%);
+  transform :scale(0.99);
+}
+.container-fluid .h1{
+
+  animation: flip 5s infinite;
+  animation-delay: calc(.1s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+.carousel-caption .display-1 {
+  transform: scale(.5);
+  animation: .5s slideIn ease-in-out forwards , 0.5s skewBg ease-in-out;
+}
+
+
+
+@keyframes skewBg {
+  0% {
+    transform: scale(.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slideIn {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+a {
+  color: #18272F;
+  position: relative;
+  
+  text-decoration: none;
+}
+
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  border-radius: 4px;
+  background-color: aliceblue;
+  bottom:0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: center;
+  transform: scaleX(1);
+}
